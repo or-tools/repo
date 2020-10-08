@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="ssh://git@github.com/"/>
+  <remote name="gitlab" fetch="ssh://git@gitlab.com/"/>
+
+  <default revision="master" remote="github" sync-s="true"/>
+
+  <project name="or-tools/repo" path="repo"/>
+
+  <project name="or-tools/or-tools" path="or-tools"/>
+
+  <project name="or-tools/homebrew_or-tools" path="homebrew_or-tools"/>
+  <project name="or-tools/cmake_or-tools" path="cmake_or-tools"/>
+  <project name="or-tools/docker_or-tools" path="docker_or-tools"/>
+  <project name="or-tools/ruby_or-tools" path="ruby_or-tools"/>
+</manifest>
