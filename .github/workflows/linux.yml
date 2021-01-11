@@ -20,7 +20,7 @@ jobs:
     - name: Update Path
       run: echo "$HOME/.local/bin" >> $GITHUB_PATH
     - name: Repo init
-      run: repo init -u ssh://git@github.com/or-tools/repo.git -b main
+      run: repo init -u https://github.com/or-tools/repo.git -b main
     - name: Repo start
       run: repo start --all main
     - name: Repo sync
