@@ -1,0 +1,30 @@
+name: Linux
+
+on:
+  push:
+  pull_request:
+  schedule:
+    # min hours day(month) month day(week)
+    - cron: '0 0 7,22 * *'
+
+jobs:
+  # Building using the github runner environement directly.
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install repo
+      run: |
+        mkdir -p ~/.local/bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.local/bin/repo
+        chmod a+x ~/.local/bin/repo
+    - name: Repo init
+      run: repo init -u .
+    - name: Repo start
+      run: repo start --all main
+    - name: Repo sync
+      run: |
+        repo sync
+        repo forall -c "git checkout main"
+    - name: Repo status
+      run: repo status
