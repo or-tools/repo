@@ -3,7 +3,7 @@
   <remote name="github" fetch="ssh://git@github.com/"/>
   <remote name="gitlab" fetch="ssh://git@gitlab.com/"/>
 
-  <default revision="master" remote="github" sync-s="true"/>
+  <default revision="main" remote="github" sync-s="true"/>
 
   <project name="or-tools/repo" path="repo"/>
 
