@@ -13,7 +13,7 @@ chmod a+x ~/.local/bin/repo
 ## Getting the manifest
 ### Using ssh
 ```sh
-repo init -u ssh://git@github.com/or-tools/repo.git
+repo init -u ssh://git@github.com/or-tools/repo.git -b main
 ```
 ### Using https
 ```sh
