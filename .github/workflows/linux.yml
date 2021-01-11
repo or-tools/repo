@@ -12,7 +12,6 @@ jobs:
   build-linux:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Install repo
       run: |
         mkdir -p ~/.local/bin
@@ -21,7 +20,7 @@ jobs:
     - name: Update Path
       run: echo "$HOME/.local/bin" >> $GITHUB_PATH
     - name: Repo init
-      run: repo init -u .
+      run: repo init -u ssh://git@github.com/or-tools/repo.git -b main
     - name: Repo start
       run: repo start --all main
     - name: Repo sync
