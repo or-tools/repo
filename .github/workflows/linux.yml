@@ -18,6 +18,8 @@ jobs:
         mkdir -p ~/.local/bin
         curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.local/bin/repo
         chmod a+x ~/.local/bin/repo
+    - name: Update Path
+      run: echo "$HOME/.local/bin" >> $GITHUB_PATH
     - name: Repo init
       run: repo init -u .
     - name: Repo start
