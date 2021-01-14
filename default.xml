@@ -15,4 +15,6 @@
   <project name="or-tools/docker_or-tools" path="docker_or-tools"/>
   <project name="or-tools/ruby_or-tools" path="ruby_or-tools"/>
   <project name="or-tools/java_or-tools" path="java_or-tools"/>
+  
+  <project name="or-tools/cmake_or-tools" path="cmake_glop"/>
 </manifest>
