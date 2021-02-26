@@ -8,7 +8,8 @@
   <project name="or-tools/repo" path="repo"/>
 
   <project name="or-tools/or-tools" path="or-tools"/>
-
+  <project name="or-tools/awesome_or-tools" path="awesome_or-tools"/>
+  
   <project name="or-tools/homebrew_or-tools" path="homebrew_or-tools"/>
   <project name="or-tools/cmake_or-tools" path="cmake_or-tools"/>
   <project name="or-tools/bazel_or-tools" path="bazel_or-tools"/>
