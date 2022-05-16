@@ -8,6 +8,7 @@
   <project name="or-tools/repo" path="repo"/>
 
   <project name="or-tools/or-tools" path="or-tools"/>
+  <project name="or-tools/docs" path="docs"/>
   <project name="or-tools/logo" path="logo"/>
   <project name="or-tools/awesome_or-tools" path="awesome_or-tools"/>
 
