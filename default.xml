@@ -16,9 +16,14 @@
   <project name="or-tools/homebrew_or-tools" path="homebrew_or-tools"/>
   <project name="or-tools/cmake_or-tools" path="cmake_or-tools"/>
   <project name="or-tools/bazel_or-tools" path="bazel_or-tools"/>
+  
   <project name="or-tools/docker_or-tools" path="docker_or-tools"/>
-  <project name="or-tools/ruby_or-tools" path="ruby_or-tools"/>
+
+  <project name="or-tools/dotnet_or-tools" path="dotnet_or-tools"/>
+  <project name="or-tools/maven_or-tools" path="maven_or-tools"/>
   <project name="or-tools/java_or-tools" path="java_or-tools"/>
+
+  <project name="or-tools/ruby_or-tools" path="ruby_or-tools"/>
 
   <project name="or-tools/cmake_glop" path="cmake_glop"/>
 </manifest>
